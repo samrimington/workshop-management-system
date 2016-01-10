@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<title>Machine Test Records Manager - WorMS Help</title>
+<style type="text/css">
+  * {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: sans-serif;
+  }
+  body {
+  margin: 20px;
+  }
+  h1 {
+  text-align: center;
+  }
+  h2 {
+  text-align: center;
+  }
+  h3 {
+  text-align: center;
+  }
+  img {
+  display: block;
+  }
+  p {
+  width: 600px;
+  }
+  ol {
+  width: 600px;
+  line-height: 130%;
+  padding-left: 50px;
+  }
+  p.note {
+  padding: 25px;
+  background-color: #363636;
+  color: white;
+  }
+  a.startofpage_link {
+  display: block;
+  text-align: center;
+  }
+</style>
+</head>
+
+<body>
+
+<a href="Help_Index.html">Go to index</a>
+
+<h3><abbr title="Workshop Management System">WorMS</abbr> Help</h3>
+
+<h1>Machine Test Records Manager</h1>
+
+<img src="images/Test_records_manager_1.gif" alt="Machine Test Records Manager window" />
+
+<p>This form is used to add and manage records for weekly machinery safety testing, as 
+well as to print blank record sheets for writing records onto paper for typing up later.</p>
+
+<ol>
+	<li><b>Date selector</b> - used to select a date of check for a record being 
+	entered or view the date of a record being viewed; the date selected can be 
+	any time before or on the current date</li>
+	<li><b>Comments text box</b> - used to enter the comments for a record being
+	entered or view the comments of a record being viewed</li>
+	<li><b>Add button</b> - used to add a record being entered to file</li>
+	<li><b>Clear button</b> - used to delete any information for a record being entered 
+	to start afresh or to let the date selector and comments text box be used again 
+	after selecting an existing test record</li>
+	<li><b>Remove button</b> - used to delete the currently selected test record from file</li>
+	<li><b>Pick Record list box</b> - used to select existing test records; records are always 
+	sorted in reverse chronological order</li>
+	<li><b>Print Blank Sheet(s) button</b> - used to print one or multiple blank record sheets 
+	for writing records onto paper for typing up later</li>
+	<li><b>Print Selected</b> - used to print a records sheet for the records selected in 
+	the Pick Record list box</li>
+</ol>
+
+<p><br /></p>
+
+<h2>Usage</h2>
+
+<p>Upon starting the program for the first time or after changing the folder for where program 
+data is stored, you will likely be presented with the following message box.</p>
+
+<img src="images/Test_records_manager_2.gif" alt="No records found dialog" />
+
+<p class="note">NOTE: If the test records file was to be deleted or tampered with,
+some or all records on the actual file could be ignored. Please see Troubleshooting for
+more details if test records you have previously saved cannot be found.</p>
+
+<p>On first use, you will be brought to an empty Pick Record list box ready for 
+entering the first test record. Record information can be entered through the date selector 
+and comments text box to the left side of the window. Click the Calendar icon in the date 
+selector to navigate and select any date in the past up to the current date.</p>
+
+<img src="images/Test_records_manager_3.gif" alt="Input record" />
+
+<p>Clicking Add will save the record on file and it will appear in the Pick Record list 
+box on the right. Selecting one record will reveal its information on the left but you 
+will not be allowed to change it. It can, however, be removed by clicking Remove.</p>
+
+<img src="images/Test_records_manager_4.gif" alt="Select record" />
+
+<p>In order to add a new record upon selecting an existing one, click Clear on the left 
+of the window; the record selection will be cleared as well as the existing data from the 
+Select Record section on the left.</p>
+
+<p>Clicking Print Blank Sheet(s) on the bottom-right will trigger an input box to enter 
+the number of blank sheets to print, which will be the number of copies of a single 
+blank sheet sent to the printer. Headers in the sheet include lines for the date of check, 
+the staff signature and the comments/action required for each test.</p>
+
+<img src="images/Test_records_manager_5.gif" alt="Pages to print input box" />
+
+<p class="note">NOTE: Clicking OK at this point will send the documents to the printer 
+directly without a print preview. For a reference to what the sheets look like, check 
+the blank lines in the Selected Test Records report print preview below.</p>
+
+<p>Selecting multiple test records in the Pick Record list box by dragging the mouse over 
+them or by holding Ctrl and selecting records individually will disable the left section since 
+multiple records cannot be all viewed or removed collectively.</p>
+
+<img src="images/Test_records_manager_6.gif" alt="Select multiple records" />
+
+<p>The records are, however, able to be printed together in a Test Records report with 
+the date and comments/action required sections for each record filled in automatically. 
+A line will still be printed for the staff signature for each record 
+to be wrote once printed. Any empty space below the page will be filled in with lines 
+under the same headers for entering further records if required.</p>
+
+<p>All records will be sorted in chronological order, opposite to how they are sorted in the 
+Pick Record list box.</p>
+
+<img src="images/Test_records_manager_7.gif" alt="Test records print preview" />
+
+<p><br /></p>
+
+<a href="#" class="startofpage_link">Start of page</a>
+
+</body>
+</html>

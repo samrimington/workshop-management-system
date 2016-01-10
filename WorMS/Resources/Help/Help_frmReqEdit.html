@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<title>Requisition Form Editor - WorMS Help</title>
+<style type="text/css">
+  * {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: sans-serif;
+  }
+  body {
+  margin: 20px;
+  }
+  h1 {
+  text-align: center;
+  }
+  h2 {
+  text-align: center;
+  }
+  h3 {
+  text-align: center;
+  }
+  img {
+  display: block;
+  }
+  p {
+  width: 600px;
+  }
+  ol {
+  width: 600px;
+  line-height: 130%;
+  padding-left: 50px;
+  }
+  p.note {
+  padding: 25px;
+  background-color: #363636;
+  color: white;
+  }
+  p.note a:link {
+  color: #80c8f1;
+  }
+  p.note a:visited {
+  color: #da70d6;
+  }
+  p.note a:hover {
+  color: #bfe3f8;
+  }
+  p.note a:active {
+  color: #66a0c0;
+  }
+  a.startofpage_link {
+  display: block;
+  text-align: center;
+  }
+</style>
+</head>
+
+<body>
+
+<a href="Help_Index.html">Go to index</a>
+
+<h3><abbr title="Workshop Management System">WorMS</abbr> Help</h3>
+
+<h1>Requisition Form Editor</h1>
+
+<img src="images/Requisition_form_editor_1.gif" alt="Requisition Form Editor window" />
+
+<p>This form is used to create new and change or reuse existing requisition forms. Once
+forms have been filled in, they can be saved as a draft or final copy and viewed in the 
+<a href="Help_frmReqMan.html">Requisition Form Manager</a>.</p>
+
+<ol>
+	<li><b>Supplier selector</b> - used to select a supplier for use in the form; 
+	mandatory when saving the form as final but optional when saving as a draft</li>
+	<li><b>Supplier address</b> - used to view the selected supplier's address; filled in 
+automatically</li>
+	<li><b>Authorised department manager text box</b> - used to enter the authorised
+department manager responsible for the form; mandatory when saving the form as final but
+optional when saving as a draft</li>
+	<li><b>Reasons for new supplier text box</b> - used to enter reasons for why a new
+supplier is being used (if required)</li>
+	<li><b>Benefits from new supplier text box</b> - used to enter benefits that come
+	about from using this new supplier</li>
+	<li><b>Resources list</b> - used to view the resources currently in the form</li>
+	<li><b>Add New Resource/Change Resource button</b> - a link to add or make changes to 
+	a resource in the form by opening the
+	<a href="Help_dlgReqEdit_ResAdd.html">Add/Edit Requested Resource</a> dialog</li>
+	<li><b>Clear Selection</b> - used to clear the currently selected resource in the 
+	resource list, to enable the Add New Resource button once again</li>
+	<li><b>Remove Selected</b> - used to remove the currently selected resource in the 
+	resource list</li>
+	<li><b>Total Cost text box</b> - used to view the net cost of all resources, 
+	considering their upfront cost, discount and VAT amounts</li>
+	<li><b>Clear Form</b> - clears all data entered in the form to start afresh</li>
+	<li><b>Save As Draft</b> - saves the requisition form as a draft and triggers the 
+	Requisition Form Manager</li>
+	<li><b>Save As Final</b> - saves the requisition form as a draft and triggers the 
+	Requisition Form Manager</li>
+</ol>
+
+<p><br /></p>
+
+<p class="note">NOTE: The Requisition Form editor requires suppliers added through the 
+<a href="Help_frmSupMan.html">Supplier Manager</a> to be available prior to opening. If 
+this is not fulfilled, an error message will appear and the user will be brought to the 
+<a href="Help_frmHomeScreen.html">Home Screen</a>.</p>
+
+<p><br /></p>
+
+<h2>Usage from Home Screen</h2>
+
+<p>Upon clicking Add New Requisition Form from the Home Screen, with suppliers available, 
+a blank requisition form will be opened ready for input.</p>
+
+<img src="images/Requisition_form_editor_2.gif" alt="Empty Requisition Form Editor window" />
+
+<p>Clicking the supplier selector on the top-left of the form will retrieve the suppliers 
+on file and display them in a list, each with the number of times they have been used
+in brackets.</p>
+
+<img src="images/Requisition_form_editor_3.gif" alt="Supplier selector opened" />
+
+<p>Selecting a supplier will automatically fill in the address text box below with the
+selected supplier's address, as stored on file. The rest of the requisition form can be
+completed with requested resources, reasons for a new supplier, benefits from a new
+supplier and the authorised department manager.</p>
+
+<p>Upon clicking Add New Resource and filling out the information for a new resource in
+the Add/Edit Requested Resource dialog, the resource is added to the resource list.
+Selecting an item will allow you to make changes to it through the Change Resource button 
+or remove it entirely through the Remove Selected button. To enable the Add New Resource
+button again after selecting a resource, click the Clear Selection button.</p>
+
+<h2>Usage from View Low Stock Dialog</h2>
+
+<p>If a new requisition form is created with resources selected from the 
+<a href="Help_dlgResMan_LowStockView.html">View Low Stock</a> dialog, they will 
+automatically be added to the resource list and can be changed by selecting them and 
+clicking the Change  Resource button for each. It is mandatory that all resources in the 
+list contain a catalogue number for the form to be saved at all.</p>
+
+<h2>Usage from Requisition Form Manager</h2>
+
+<p>When a previously saved requisition form is selected to be reused or changed, its
+contents are automatically added to a new requisition form. This means that if the form 
+is saved as a draft or final, it will be saved alongside the old file.</p>
+
+<p>Any time a previously saved requisition form's supplier cannot be found in the
+suppliers file, the requisition form's supplier will appear as blank. In this situation,
+the form can still be changed and then saved as a draft so the supplier needed can be
+added through the Supplier Manager and used in the form when it is opened again.</p>
+
+<p><br /></p>
+
+<a href="#" class="startofpage_link">Start of page</a>
+
+</body>
+</html>

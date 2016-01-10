@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<title>Resource Manager - WorMS Help</title>
+<style type="text/css">
+  * {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: sans-serif;
+  }
+  body {
+  margin: 20px;
+  }
+  h1 {
+  text-align: center;
+  }
+  h2 {
+  text-align: center;
+  }
+  h3 {
+  text-align: center;
+  }
+  img {
+  display: block;
+  }
+  p {
+  width: 600px;
+  }
+  ol {
+  width: 600px;
+  line-height: 130%;
+  padding-left: 50px;
+  }
+  a.index_link {
+  width: auto;
+  }
+  p.note {
+  background-color: #363636;
+  color: white;
+  padding: 25px;
+  }
+  a.startofpage_link {
+  display: block;
+  text-align:center;
+  }
+</style>
+</head>
+
+<body>
+
+<a href="Help_Index.html">Go to index</a>
+
+<h3><abbr title="Workshop Management System">WorMS</abbr> Help</h3>
+
+<h1>Resource Manager</h1>
+
+<img src="images/Resource_manager_1.gif" alt="Resource Manager window" />
+
+<p>This form is used to track, add, change and remove resource stock in the workshop.
+Resources are split into categories that can be created by the user.</p>
+
+<ol>
+	<li><b>Category selector</b> - the combo box on the left in Select Category,
+	used to select a saved category</li>
+	<li><b>Add category button</b> - the plus button in Select Category,
+	used to add a new category</li>
+	<li><b>Remove category button</b> - the minus button in Select Category,
+	used to remove the selected category (and its contents)</li>
+	<li><b>Name text box</b> - used to store the name of a resource</li>
+	<li><b>Stock left text box</b> - used to store the remaining stock
+	of a resource</li>
+	<li><b>Min stock text box</b> - used to store the minimum amount of stock
+	of a resource before it is considered low</li>
+	<li><b>Unit text box</b> - used to store the appropriate unit of measurement for
+	the resource stock</li>
+	<li><b>Student responsible selector</b> - used to select the student responsible
+	for the change in resource stock</li>
+	<li><b>Add/Change resource button</b> - the Add button in Select Resource,
+	used to add a new resource if data is input from scratch or change
+	data in the selected resource</li>
+	<li><b>Clear selection button</b> - the Clear button in Select Resource,
+	used to clear the resource selection and any unsaved data input</li>
+	<li><b>Remove resource button</b> - the Remove button in Select Resource,
+	used to remove the selected resource</li>
+	<li><b>Resources list</b> - the list box on the top-right, used to view saved
+	resources and their stock from the category selected</li>
+	<li><b>View Low Stock button</b> - used to open the
+	<a href="Help_dlgResMan_LowStockView.html">View Low Stock</a> dialog
+	for inspecting resources at or below their minimum stock</li>
+</ol>
+
+<p><br /></p>
+
+<h2>Usage</h2>
+
+<p>The Resource Manager works with a single resources file in the WorMS folder,
+which stores the resource records. Upon opening this form for the first time or
+after changing the file directory, you are likely to be presented with an empty window:</p>
+
+<img src="images/Resource_manager_2.gif" alt="Empty Resource Manager window" />
+
+<p>The information in the list box to the right is to indicate that the program has found
+no records on the resources file.</p>
+
+<p class="note">NOTE: If the resources file was to be deleted or tampered with,
+some or all records on the actual file could be ignored. Please see Troubleshooting for
+more details if resources you have previously saved cannot be found.</p>
+
+<p>The only button available will be the Add Category button. Upon clicking it, an input
+box to enter a new category will appear.</p>
+
+<img src="images/Resource_manager_3.gif" alt="Enter New Category dialog" />
+
+<p>Clicking Cancel will stop the category from being added. Clicking OK will validate
+your input and add the new category to the category selector if correct, ready for
+resources in that category to be added.</p>
+
+<img src="images/Resource_manager_4.gif" alt="New Category added" />
+
+<p>Now that a category has been added, data can be input into Select Resource
+to add new resources in the category created.</p>
+
+<p class="note">NOTE: Any categories added without resources will not be saved to
+the records file when the Resource Manager is closed.</p>
+
+<p>Upon adding a new resource, a record for that resource is stored on file and added
+to the resource list. The data input in Select Resource is then cleared. Data from
+an existing resource can be viewed and changed by simply selecting it in the resource
+list.</p>
+
+<img src="images/Resource_manager_5.gif" alt="Resource data view" />
+
+<p>When making a change to resource stock, the student responsible for the change can
+be selected in the student responsible selector. There must be students in the students
+file in order for them to appear.</p>
+
+<img src="images/Resource_manager_6.gif" alt="Student responsible selector opened" />
+
+<p>Of course, any time a student is not responsible or a resource has been restocked,
+the None option can be selected.</p>
+
+<p class="note">NOTE: Remember to click Change or press enter each time data in a
+resource is modified since clicking away from the selected resource will mean data
+input is lost if it has not already been saved.</p>
+
+<p>Clicking on the category selector will open a list of categories the user has
+created.</p>
+
+<img src="images/Resource_manager_7.gif" alt="Category selector opened" />
+
+<p>As stated before, when the Resource Manager is reopened this list will only
+retain those categories that have resources associated with them.</p>
+
+<p>Upon selecting a resource in the resource list, the remove resource button is
+also enabled so the user can remove the selected resource. A confirmation will
+appear upon clicking the button and selecting Yes will remove that resource
+from file.</p>
+
+<img src="images/Resource_manager_8.gif" alt="Confirm Remove Resource dialog" />
+
+<p>While a category is selected, the remove category button will be enabled. Upon
+clicking the button, a confirmation will appear. Selecting Yes will remove the
+selected category and its contents (if any) from file.</p>
+
+<img src="images/Resource_manager_9.gif" alt="Confirm Remove Category dialog" />
+
+<p><br /></p>
+
+<a href="#" class="startofpage_link">Start of page</a>
+
+</body>
+</html>

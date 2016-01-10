@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<title>Low Stock View - WorMS Help</title>
+<style type="text/css">
+  * {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: sans-serif;
+  }
+  body {
+  margin: 20px;
+  }
+  h1 {
+  text-align: center;
+  }
+  h2 {
+  text-align: center;
+  }
+  h3 {
+  text-align: center;
+  }
+  img {
+  display: block;
+  }
+  p {
+  width: 600px;
+  }
+  ol {
+  width: 600px;
+  line-height: 130%;
+  padding-left: 50px;
+  }
+  p.note {
+  padding: 25px;
+  background-color: #363636;
+  color: white;
+  }
+  a.startofpage_link {
+  display: block;
+  text-align: center;
+  }
+</style>
+</head>
+
+<body>
+
+<a href="Help_Index.html">Go to index</a>
+
+<h3><abbr title="Workshop Management System">WorMS</abbr> Help</h3>
+
+<h1>View Low Stock</h1>
+
+<img src="images/View_low_stock_1.gif" alt="View low stock dialog" />
+
+<p>This dialog is used to view resource stock low in quantity, displaying the amount each
+resource is under their minimum stock. The list of resources low in stock may be printed
+and resources in the list may be selected to add to a new requisition form.</p>
+
+<ol>
+	<li><b>Low stock resources list</b> - used to display and give the ability to 
+	select resources low in stock quantity</li>
+	<li><b>Add Selected to New Form button</b> - used to take the resources selected 
+	in the list and add them to a new requisition form</li>
+	<li><b>Print button</b> - used to generate a print preview of all resources in low 
+	stock</li>
+	<li><b>Close button</b> - closes the dialog and returns the user to the 
+	<a href="Help_frmResMan.html">Resource Manager</a></li>
+</ol>
+
+<p><br /></p>
+
+<h2>Usage</h2>
+
+<p>When the dialog is opened, the resource list will automatically populate with resources 
+low in stock in the order of category first and then alphabetically within each category. 
+A resource is considered low in stock when its stock amount reaches or falls below its 
+minimum stock range. The list displays each resource as an item, with its current amount, 
+minimum amount and the amount its current stock is below the minimum.</p>
+
+<p>Clicking the Print button will generate a print preview of all resources low in stock, 
+which can then be printed for reference or archiving purposes.</p>
+
+<img src="images/View_low_stock_2.gif" alt="Low stock print preview" />
+
+<p>Multiple low stock resources can be selected by clicking each of them individually, and 
+deselected by clicking on them once again.</p>
+
+<img src="images/View_low_stock_3.gif" alt="Low stock dialog with items selected" />
+
+<p>Doing so will enable the Add Selected To New Form button, where clicking it will create 
+a new requisition form with the resources you have selected and display it on screen in the 
+<a href="Help_frmReqEdit.html">Requisition Form Editor</a>.</p>
+
+<img src="images/View_low_stock_4.gif" alt="New requisition form from items selected" />
+
+<p><br /></p>
+
+<a href="#" class="startofpage_link">Start of page</a>
+
+</body>
+</html>

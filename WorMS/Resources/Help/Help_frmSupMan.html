@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<title>Supplier Manager - WorMS Help</title>
+<style type="text/css">
+  * {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: sans-serif;
+  }
+  body {
+  margin: 20px;
+  }
+  h1 {
+  text-align: center;
+  }
+  h2 {
+  text-align: center;
+  }
+  h3 {
+  text-align: center;
+  }
+  img {
+  display: block;
+  }
+  p {
+  width: 600px;
+  }
+  ol {
+  width: 600px;
+  line-height: 130%;
+  padding-left: 50px;
+  }
+  p.note {
+  padding: 25px;
+  background-color: #363636;
+  color: white;
+  }
+  a.startofpage_link {
+  display: block;
+  text-align: center;
+  }
+</style>
+</head>
+
+<body>
+
+<a href="Help_Index.html">Go to index</a>
+
+<h3><abbr title="Workshop Management System">WorMS</abbr> Help</h3>
+
+<h1>Supplier Manager</h1>
+
+<img src="images/Supplier_manager_1.gif" alt="Supplier Manager window" />
+
+<p>This form is used to manage suppliers for usage in requisition forms and track their
+usage.</p>
+
+<ol>
+	<li><b>Name text box</b> - used to view or enter a name of a supplier</li>
+	<li><b>Times used spin box</b> - used to view or enter the number of times a 
+	supplier has been used</li>
+	<li><b>Address text box</b> - used to view or enter a supplier's address</li>
+	<li><b>Add/Change button</b> - used to add a new supplier with the information 
+	entered or to change the information of one selected in the list</li>
+	<li><b>Clear button</b> - used to clear the supplier list selection and any data
+	entry</li>
+	<li><b>Remove button</b> - used to remove the currently selected supplier</li>
+	<li><b>Supplier list box</b> - used to select a supplier already on file to view or 
+	change its contents or delete it altogether; suppliers are always in decreasing order
+	of times used</li>
+</ol>
+
+<p><br /></p>
+
+<h2>Usage</h2>
+
+<p>On opening the Supplier Manager for the first time or after changing the folder 
+location, you are likely to be presented with an empty window:</p>
+
+<img src="images/Supplier_manager_2.gif" alt="Empty Supplier Manager window" />
+
+<p>The information in the list box to the right is to indicate that the program has found
+no records on the suppliers file.</p>
+
+<p class="note">NOTE: If the suppliers file was to be deleted or tampered with,
+some or all records on the actual file could be ignored. Please see Troubleshooting for
+more details if suppliers you have previously saved cannot be found.</p>
+
+<p>To add your first supplier to list, simply input the supplier name and address in the 
+boxes on the left and click Add when finished. The times used can be changed if you wish 
+but this optional as it will be handled by the program automatically.</p>
+
+<img src="images/Supplier_manager_3.gif" alt="Supplier added" />
+
+<p>Selecting a record in the list will make its contents appear in the boxes on the left, 
+where it can be viewed and changed by making changes and clicking the Change button. The 
+supplier may also be removed by clicking the Remove button.</p>
+
+<img src="images/Supplier_manager_4.gif" alt="Supplier viewed" />
+
+<p>Any time an unprinted final requisition form is exported to Excel through the 
+<a href="Help_frmReqMan.html">Requisition Form Manager</a> to become a printed final 
+form, the times used of the supplier associated with it will increment and the suppliers will 
+sort as appropriate to represent the supplier 'hierarchy'. If a form has already been printed, 
+the times used for that supplier will not update further.</p>
+
+<p><br /></p>
+
+<a href="#" class="startofpage_link">Start of page</a>
+
+</body>
+</html>

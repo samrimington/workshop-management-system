@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<title>Student Manager - WorMS Help</title>
+<style type="text/css">
+  * {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: sans-serif;
+  }
+  body {
+  margin: 20px;
+  }
+  h1 {
+  text-align: center;
+  }
+  h2 {
+  text-align: center;
+  }
+  h3 {
+  text-align: center;
+  }
+  img {
+  display: block;
+  }
+  p {
+  width: 600px;
+  }
+  ol {
+  width: 600px;
+  line-height: 130%;
+  padding-left: 50px;
+  }
+  p.note {
+  padding: 25px;
+  background-color: #363636;
+  color: white;
+  }
+  a.startofpage_link {
+  display: block;
+  text-align: center;
+  }
+</style>
+</head>
+
+<body>
+
+<a href="Help_Index.html">Go to index</a>
+
+<h3><abbr title="Workshop Management System">WorMS</abbr> Help</h3>
+
+<h1>Student Manager</h1>
+
+<img src="images/Student_manager_1.gif" alt="Student Manager window" />
+
+<p>This form is used to manage student records and the resources they have 
+used. Receipts can also be printed for students who have paid what they owe 
+in the costs of using resources.</p>
+
+<ol>
+	<li><b>Student list box</b> - used to view students and select them 
+	to change their information, view their information in more detail, 
+	remove them altogether or add to collection of students for receipt 
+	printing</li>
+	<li><b>Add/Change Student button</b> - used to add a new student when 
+	no current students are selected or change the student currently 
+	selected</li>
+	<li><b>View Info button</b> - used to view the information of a student 
+	in more detail; changes to information cannot be made in this mode</li>
+	<li><b>Remove Student button</b> - used to remove the currently selected 
+	student and their record of resources used (if any) from file</li>
+	<li><b>Print Receipt(s)</b> - used to print receipts for the students 
+	selected in the student list box; the user will be notified if any of 
+	the students selected has not yet paid or already had their receipt 
+	printed to prevent error</li>
+</ol>
+
+<p><br /></p>
+
+<h2>Usage</h2>
+
+<p>Upon starting the program for the first time or after changing the folder 
+where data is saved, you will likely be presented with a message stating no 
+student records could be found.</p>
+
+<img src="images/Student_manager_2.gif" alt="Empty Student Manager window" />
+
+<p class="note">NOTE: If the students file or any student resource log files were to be 
+deleted or tampered with, some or all records on the actual file could be ignored. 
+Please see Troubleshooting for more details if students or a student's resources you have 
+previously saved cannot be found.</p>
+
+<p>The first student may be added through the 
+<a href="Help_dlgStuMan_InfoView.html">View/Edit Student Information</a> dialog, which is 
+triggered by clicking the Add Student button. After adding a student, it will appear in the 
+student list box once you return to the Student Manager.</p>
+
+<img src="images/Student_manager_3.gif" alt="Student added" />
+
+<p>More students can be added after this if required.</p>
+
+<p>Selecting one student in the list will enable the Change Student, View Info and Remove 
+Student buttons.</p>
+
+<img src="images/Student_manager_4.gif" alt="One student selected" />
+
+<p>Clicking Change Student will allow you to view and change information associated 
+with the student selected through the View/Edit Student Information dialog once again. 
+Clicking View Info will trigger the same dialog but information will only be viewable. 
+Clicking Remove Student will remove the selected student and their resource log, if any, 
+from file. Print Receipt(s) can also be clicked to print a single receipt for this 
+student, although it would be more sensible to print receipts for multiple receipts to 
+save paper (see below).</p>
+
+<p>If multiple students are selected by dragging the mouse across multiple items or by holding
+the Ctrl key and clicking students individually, they will not all be able to be changed, viewed 
+or removed collectively. However, the print receipt(s) button will be enabled to print receipts 
+for the selected students.</p>
+
+<img src="images/Student_manager_5.gif" alt="Multiple students selected" />
+
+<p>Clicking the Print Receipt(s) button will generate a print preview of the student's 
+receipts, which feature spaces for handout number and signature, as well as the current 
+date, their name and the cost paid, all placed automatically.</p>
+
+<img src="images/Student_manager_6.gif" alt="Receipts Print Preview" />
+
+<p>Upon printing the sheet(s), they can be cut into handouts for each individual student 
+to receive. When the print preview is closed, the receipt printed value for each student 
+will be updated automatically.</p>
+
+<img src="images/Student_manager_7.gif" alt="Students updated after printing receipts" />
+
+<p>Attempting to print receipts for students who have not yet paid or had a receipt 
+printed already will trigger a message box to confirm your selection. Receipts can still 
+be printed but it is recommended to amend the data for each student first.</p>
+
+<p><br /></p>
+
+<a href="#" class="startofpage_link">Start of page</a>
+
+</body>
+</html>

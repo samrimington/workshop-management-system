@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<title>Requisition Form Manager - WorMS Help</title>
+<style type="text/css">
+  * {
+  margin-right: auto;
+  margin-left: auto;
+  font-family: sans-serif;
+  }
+  body {
+  margin: 20px;
+  }
+  h1 {
+  text-align: center;
+  }
+  h2 {
+  text-align: center;
+  }
+  h3 {
+  text-align: center;
+  }
+  img {
+  display: block;
+  }
+  p {
+  width: 600px;
+  }
+  ol {
+  width: 600px;
+  line-height: 130%;
+  padding-left: 50px;
+  }
+  p.note {
+  padding: 25px;
+  background-color: #363636;
+  color: white;
+  }
+  a.startofpage_link {
+  display: block;
+  text-align: center;
+  }
+</style>
+</head>
+
+<body>
+
+<a href="Help_Index.html">Go to index</a>
+
+<h3><abbr title="Workshop Management System">WorMS</abbr> Help</h3>
+
+<h1>Requisition Form Manager</h1>
+
+<img src="images/Requisition_form_manager_1.gif" alt="Requisition Form Manager window" />
+
+<p>This form is used to manage saved requisition forms. The type of form can either be a 
+draft, unprinted final or printed final form, all of which have their own unique differences.</p>
+
+<ol>
+	<li><b>Select type radio buttons (printed, unprinted, drafts)</b> - used to select a 
+	certain type of form and display it in the requisition form list</li>
+	<li><b>Requisition form list</b> - used to display the requisition forms saved under 
+	the category selected above; forms are always sorted in chronological order</li>
+	<li><b>Reuse/Change button</b> - used to open the currently selected requisition form 
+	for editing through the <a href="Help_frmReqEdit.html">Requisition Form Editor</a></li>
+	<li><b>Export to Excel button</b> - used to copy the contents of the currently selected 
+	requisition form to an Excel spreadsheet formatted for printing as an actual requisition
+	form; this will only work with unprinted final or printed final forms</li>
+	<li><b>Remove button</b> - used to delete the currently selected requisition form</li>
+</ol>
+
+<p><br /></p>
+
+<h2>Usage</h2>
+
+<p>Upon clicking Drafts as the requisition form type, a list of all the saved draft forms 
+will generate.</p>
+
+<img src="images/Requisition_form_manager_2.gif" alt="Draft requisition form selected" />
+
+<p>Clicking a form in the list will enable the Change and Remove buttons below, 
+which let you make changes to the selected form or remove it completely. Draft requisition 
+forms cannot be exported to Excel and must be saved again as final to do so.</p>
+
+<p class="note">NOTE: When a form is saved again after opening it in the Requisition Form 
+Editor, the original form will be kept alongside the new one created. Items in the list will 
+always be sorted in chronological order so the old form can be easily found in the list, 
+selected and deleted manually.</p>
+
+<p>Upon clicking Unprinted as the requisition form type, a list of all the saved unprinted 
+final forms will generate.</p>
+
+<img src="images/Requisition_form_manager_3.gif" alt="Unprinted requisition form selected" />
+
+<p>Clicking a form in the list in this mode will enable all the buttons below, allowing you to
+not only reuse or remove the selected form but also export it as an Excel document, formatted 
+as a requisition form for actual use. Just like with draft forms, after selecting Reuse and 
+saving the form in the Requisition Form Editor again, it will create a copy of that form alongside 
+it.</p>
+
+<p>Clicking Export to Excel will trigger Microsoft Excel to generate a formatted requisition form, 
+which will be saved to the user's documents folder. If the form was exported successfully, a 
+message box will open which also states the location where it was saved.</p>
+
+<p class="note">NOTE: Your computer must have Microsoft Excel installed to do this. If you do not 
+have it installed, the program will likely crash.</p>
+
+<img src="images/Requisition_form_manager_4.gif" alt="Successful Requisition Form export dialog" />
+
+<p>The exported form can then be viewed by opening the file through Microsoft Excel. For parts 
+that may not fit properly, such as the item name in this case, the font size can be changed 
+manually to accompany this.</p>
+
+<p><br /></p>
+
+<a href="#" class="startofpage_link">Start of page</a>
+
+</body>
+</html>
